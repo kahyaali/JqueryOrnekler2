@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").remove();
+  });
+});
+</script>
+</head>
+<body>
+
+  <!--
+    remove komutu ile var olan div elementin kaldırıyoruz
+  -->
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+
+<p>1. paragraf.</p>
+<p>2. paragraf.</p>
+
+</div>
+<br>
+
+<button>elementi kaldır</button>
+
+</body>
+</html>

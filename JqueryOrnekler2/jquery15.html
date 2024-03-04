@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      height: 'toggle'
+    });
+  });
+});
+</script> 
+</head>
+<body>
+
+  <!-- her tıkalamada animate metodu ile animasyon özelliği kazanır ve div açık ise kapanır kapalı ise açılır toggle olduğu için-->
+<p>çoklu animasyon için butona tıkla.</p>
+
+<button>Animasyonu Başlat</button>
+
+<p>butona her tıklandığında div yüksekliği gizlenip gösterilecek!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

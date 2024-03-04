@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+</head>
+<body>
+
+  <!-- butona tıklayınca p elementine css uyguluyor önce yukarı sonra tekrar aşağı iniyor verilen süre sonunda-->
+<p id="p1">Bu p elementine css uygulanacaktır</p>
+
+<button>Butona tıkla</button>
+
+</body>
+</html>

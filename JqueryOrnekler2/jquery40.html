@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").toggleClass("blue");
+  });
+});
+</script>
+<style>
+.blue {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+  <!--
+    burada toogleclass ile butona tıklayınca class eklenip kaldırılıyor
+  -->
+<h1>Başlık 1</h1>
+<h2>Başlık 2</h2>
+
+<p>1. paragraf.</p>
+<p>2. paragraf.</p>
+
+<button>Toggle class</button>
+
+</body>
+</html>

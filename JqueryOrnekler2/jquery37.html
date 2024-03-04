@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").addClass("blue");
+    $("div").addClass("important");
+  });
+});
+</script>
+<style>
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.blue {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+  <!--
+    burada butona tıkladığımızda elementlere class eklemesi yapıyoruz ve verilen css kodları bu eklenen class üzerinde çalışıyor
+  -->
+<h1>Başlık 1</h1>
+<h2>Başlık 2</h2>
+
+<p>1. paragraf</p>
+<p>2. paragraf</p>
+
+<div>bu önemli bir yzıdır!</div><br>
+
+<button>Elemente class ekle</button>
+
+</body>
+</html>

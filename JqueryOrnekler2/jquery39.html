@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").removeClass("blue");
+  });
+});
+</script>
+<style>
+.blue {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+  <!--
+    burada verilmiş olan class değerlerini butona tıklayınca remove diyoruz default değerlere dönüyor elementler
+  -->
+<h1 class="blue">Başlık 1</h1>
+<h2 class="blue">Başlık 2</h2>
+
+<p class="blue">1. paragraf.</p>
+<p>2. paragraf.</p>
+
+<button>elementten class değerini kaldır</button>
+
+</body>
+</html>
